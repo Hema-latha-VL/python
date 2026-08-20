@@ -40,7 +40,7 @@ print("--- Daily Transaction Summary ---")
 print(summary)
 
 # Export daily_sales_summary to CSV. Include date, total_amount, transaction_count columns.
-
+print("the execution is completed");
 summary.to_csv("daily_sales_summary.csv", index=False)
 
 
