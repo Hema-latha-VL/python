@@ -18,7 +18,6 @@ df1['amount_status'] = df1['amount'].apply(lambda x: 'Valid' if x > 0 else 'Flag
 
 flagged_rows = df1[df1['amount'] <= 0]
 
-print("--- valid Transactions ---")
 if flagged_rows.empty:
     print("All transaction amounts are positive! No issues found.")
 else:
@@ -39,8 +38,9 @@ summary = summary.sort_values(by='date')
 print("--- Daily Transaction Summary ---")
 print(summary)
 
-# Export daily_sales_summary to CSV. Include date, total_amount, transaction_count columns.
-print("the execution is completed");
+
+print("the summary was successfully generated")
+
 summary.to_csv("daily_sales_summary.csv", index=False)
 
 
