@@ -35,16 +35,14 @@ summary = df1.groupby('date').agg(
 # Sorting the results 
 summary = summary.sort_values(by='date')
 
-print("--- Daily Transaction Summary ---")
+print(" Summary")
 print(summary)
 
 
 print("the summary was successfully generated")
 
 summary.to_csv("daily_sales_summary.csv", index=False)
-print("developer 1 code ")
 
-print("developer 2 change")
 
 
 
