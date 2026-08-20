@@ -42,7 +42,7 @@ print("the summary was successfully generated")
 
 summary.to_csv("daily_sales_summary.csv", index=False)
 
-
+print("developer 2 change")
 
 
 
